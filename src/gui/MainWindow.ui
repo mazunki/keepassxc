@@ -436,6 +436,10 @@
    <addaction name="actionEntryCopyURL"/>
    <addaction name="actionEntryAutoType"/>
    <addaction name="separator"/>
+   <addaction name="actionDatabaseSettings"/>
+   <addaction name="actionReports"/>
+   <addaction name="actionPasskeys"/>
+   <addaction name="separator"/>
    <addaction name="actionPasswordGenerator"/>
    <addaction name="actionSettings"/>
    <addaction name="separator"/>
@@ -659,6 +663,9 @@
    </property>
   </action>
   <action name="actionReports">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
    <property name="enabled">
     <bool>false</bool>
    </property>
@@ -676,6 +683,9 @@
    </property>
   </action>
   <action name="actionDatabaseSettings">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
    <property name="enabled">
     <bool>false</bool>
    </property>
@@ -693,6 +703,9 @@
    </property>
   </action>
   <action name="actionPasskeys">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
    <property name="enabled">
     <bool>false</bool>
    </property>
