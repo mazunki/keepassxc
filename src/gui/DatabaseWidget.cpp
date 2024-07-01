@@ -1273,6 +1273,7 @@ void DatabaseWidget::loadDatabase(bool accepted)
     }
 
     if (accepted) {
+        emit databaseAboutToUnlock();
         replaceDatabase(openWidget->database());
         switchToMainView();
         processAutoOpen();
@@ -1429,6 +1430,7 @@ void DatabaseWidget::unlockDatabase(bool accepted)
         }
     }
 
+    emit databaseAboutToUnlock();
     QSharedPointer<Database> db;
     if (senderDialog) {
         db = senderDialog->database();
